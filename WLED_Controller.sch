@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "WLED-Controller"
+Date "2021-06-02"
+Rev "0.1"
+Comp "ZOESCH.ART"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 60B56169
+P 2150 2050
+F 0 "#PWR02" H 2150 1800 50  0001 C CNN
+F 1 "GND" H 2155 1877 50  0000 C CNN
+F 2 "" H 2150 2050 50  0001 C CNN
+F 3 "" H 2150 2050 50  0001 C CNN
+	1    2150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1600 2400 1600
+Wire Wire Line
+	3250 1600 3250 1850
+Wire Wire Line
+	5250 4350 5250 3500
+Wire Wire Line
+	5250 3500 5900 3500
+Wire Wire Line
+	5250 3500 5250 3300
+Wire Wire Line
+	5250 3300 5900 3300
+Connection ~ 5250 3500
+Wire Wire Line
+	5250 3300 5250 3100
+Wire Wire Line
+	5250 3100 5900 3100
+Connection ~ 5250 3300
+Wire Wire Line
+	5250 3100 5250 2900
+Wire Wire Line
+	5250 2900 5900 2900
+Connection ~ 5250 3100
+Wire Wire Line
+	5250 4350 7550 4350
+Wire Wire Line
+	7550 4350 7550 3900
+Wire Wire Line
+	7550 3900 7300 3900
+Connection ~ 5250 4350
+Wire Wire Line
+	3750 3100 4850 3100
+Wire Wire Line
+	4850 3100 4850 3400
+Wire Wire Line
+	4850 3400 5900 3400
+Wire Wire Line
+	3750 3200 4750 3200
+Wire Wire Line
+	4750 3200 4750 3600
+Wire Wire Line
+	4750 3600 5900 3600
+$Comp
+L power:+5V #PWR01
+U 1 1 60B55661
+P 2150 1600
+F 0 "#PWR01" H 2150 1450 50  0001 C CNN
+F 1 "+5V" H 2165 1773 50  0000 C CNN
+F 2 "" H 2150 1600 50  0001 C CNN
+F 3 "" H 2150 1600 50  0001 C CNN
+	1    2150 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60B6B922
+P 2400 1750
+F 0 "C1" H 2515 1796 50  0000 L CNN
+F 1 "C 1000µF" H 2515 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2438 1600 50  0001 C CNN
+F 3 "~" H 2400 1750 50  0001 C CNN
+	1    2400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1900 2150 2050
+Wire Wire Line
+	2150 1900 2400 1900
+Wire Wire Line
+	2400 1900 2400 4350
+Connection ~ 2400 1900
+Connection ~ 2400 1600
+Wire Wire Line
+	2400 1600 3250 1600
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 60B73F79
+P 9050 3050
+F 0 "J1" H 9130 3042 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 9130 2951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 9050 3050 50  0001 C CNN
+F 3 "~" H 9050 3050 50  0001 C CNN
+	1    9050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3100 8500 3100
+Wire Wire Line
+	8500 3050 8850 3050
+Wire Wire Line
+	7300 3200 7800 3200
+Wire Wire Line
+	8550 3200 8550 3150
+Wire Wire Line
+	8550 3150 8850 3150
+Connection ~ 7550 4350
+Wire Wire Line
+	8100 3200 8550 3200
+$Comp
+L Device:R R1
+U 1 1 60B78ED5
+P 7950 3200
+F 0 "R1" V 8050 3200 50  0000 C CNN
+F 1 "R 330Ω" V 8150 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7880 3200 50  0001 C CNN
+F 3 "~" H 7950 3200 50  0001 C CNN
+	1    7950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60B613C3
+P 1250 1850
+F 0 "J2" H 1168 1525 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1168 1616 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1250 1850 50  0001 C CNN
+F 3 "~" H 1250 1850 50  0001 C CNN
+	1    1250 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1750 2150 1750
+Wire Wire Line
+	2150 1750 2150 1600
+Wire Wire Line
+	1450 1850 2150 1850
+Wire Wire Line
+	2150 1850 2150 1900
+Connection ~ 2150 1900
+Wire Wire Line
+	8500 3100 8500 3050
+Wire Wire Line
+	8600 4350 8600 2950
+Wire Wire Line
+	8600 2950 8850 2950
+Wire Wire Line
+	7550 4350 8600 4350
+Wire Wire Line
+	8750 1850 8750 3250
+Wire Wire Line
+	8750 3250 8850 3250
+$Comp
+L SN74AHCT125:SN74AHCT125N U2
+U 1 1 60B79C70
+P 6600 3300
+F 0 "U2" H 6600 4208 69  0000 C CNN
+F 1 "SN74AHCT125N" H 6600 4088 69  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6600 3300 50  0001 C CNN
+F 3 "" H 6600 3300 50  0001 C CNN
+	1    6600 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5900 3000
+NoConn ~ 5900 3200
+NoConn ~ 7300 2900
+NoConn ~ 7300 3000
+NoConn ~ 3750 2700
+NoConn ~ 3750 2800
+NoConn ~ 3750 2900
+NoConn ~ 3750 3000
+NoConn ~ 3750 3300
+NoConn ~ 3750 3400
+NoConn ~ 3750 3500
+NoConn ~ 3750 3600
+NoConn ~ 6750 -800
+NoConn ~ 6150 -450
+NoConn ~ 2950 2800
+NoConn ~ 2950 3100
+NoConn ~ 2950 3200
+Connection ~ 2150 1600
+NoConn ~ 3450 2400
+Wire Wire Line
+	3250 1850 7550 1850
+Wire Wire Line
+	7300 2700 7550 2700
+Wire Wire Line
+	7550 2700 7550 1850
+Connection ~ 7550 1850
+Wire Wire Line
+	7550 1850 8750 1850
+Wire Wire Line
+	2400 4350 3350 4350
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 60B48798
+P 3350 3200
+F 0 "U1" H 3000 2400 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 3000 2300 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 3350 2050 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1500 2050 50  0001 C CNN
+	1    3350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4000 3350 4350
+Connection ~ 3350 4350
+Wire Wire Line
+	3350 4350 5250 4350
+Wire Wire Line
+	3250 1850 3250 2400
+Connection ~ 3250 1850
+$EndSCHEMATC
