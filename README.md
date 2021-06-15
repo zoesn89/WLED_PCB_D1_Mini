@@ -9,10 +9,10 @@ Recommended software: [WLED](https://github.com/Aircoookie/WLED)
 
 ## Components
 
-- C1: Capacitor Radial 3.8mm 1000μF 6.3
+- C1: Capacitor Radial 1000μF
 - U1: WeMos D1 Mini
 - U2: level shifter SN74AHCT125N
-- R1: Resistor 330 Ohm
+- R1: Resistor 330Ω
 
 
 ## GPIO
