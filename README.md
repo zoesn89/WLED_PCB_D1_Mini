@@ -20,6 +20,9 @@ Recommended software: [WLED](https://github.com/Aircoookie/WLED)
 - GPIO3 = CLK line of addressable strip
 - GPIO4 = Data line of addressable strip
 
+## Gerber Files
+[Gerber-Files](https://github.com/zoesn89/WLED_PCB_D1_Mini/releases)
+
 ## License
 
 The MIT License (MIT)
