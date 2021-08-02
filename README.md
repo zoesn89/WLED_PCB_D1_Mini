@@ -23,6 +23,9 @@ Recommended software: [WLED](https://github.com/Aircoookie/WLED)
 ## Gerber Files
 [Gerber-Files](https://github.com/zoesn89/WLED_PCB_D1_Mini/releases)
 
+## Enclosure STL-Files
+[STL-Files](https://github.com/zoesn89/WLED_PCB_D1_Mini/tree/main/Enclosure)
+
 ## License
 
 The MIT License (MIT)
